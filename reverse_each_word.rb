@@ -8,5 +8,6 @@ def reverse_each_word(sentence)
 end
 
 def reverse_collect_word(sentence)
-  sentence.map {|word| word.chars.my_reverse.join}.join(" ")
+  words = sentence.split
+  words.reverse_each {|word| puts word, " "}
 end
