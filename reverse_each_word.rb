@@ -10,5 +10,5 @@ end
 def reverse_each_word2(sentence)
   words = sentence.split
   backwards = words.each {|x| x.reverse}
-  backwards
+  backwards.join(" ")
 end
