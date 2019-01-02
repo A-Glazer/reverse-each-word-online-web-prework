@@ -3,7 +3,7 @@ sentence = "Hello there, and how are you?"
 def reverse_each_word(sentence)
   words = sentence.split
   backwards = []
-  words.each do |x|
+  words.collect do |x|
      backwards << x.reverse
   end
   backwards.join(" ")
